@@ -1,0 +1,5 @@
+FROM almalinux:9
+RUN dnf install nginx   
+RUN usedadd uday
+USER uday
+CMD ["sleep", "1000"] 
